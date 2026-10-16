@@ -9,13 +9,11 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:integration": "node tests/integration.mjs",
     "test:ratelimit": "node tests/ratelimit.mjs",
     "deploy": "bash scripts/deploy-gh-pages.sh",
     "bundle:functions": "bash scripts/bundle-functions.sh",
-    "test:agents": "node tests/agents.mjs",
-    "test:e2e-agents": "node tests/e2e-agents.mjs",
-    "test:e2e": "node tests/e2e.mjs"
+    "test:e2e": "node tests/e2e.mjs",
+    "test:e2e-ui": "node tests/e2e-ui.mjs"
   },
   "dependencies": {
     "highlight.js": "^11.12.0",
