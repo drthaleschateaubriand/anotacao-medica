@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+    <title>Anotação Médica</title>
+    <meta name="description" content="Bloco de notas e assistente de IA gratuita para textos do dia a dia no hospital. Acesso privado por senha." />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Anotação Médica" />
+    <link rel="manifest" href="/anotacao-medica/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="/anotacao-medica/icons/favicon-64.png" />
+    <link rel="apple-touch-icon" href="/anotacao-medica/icons/apple-touch-icon.png" />
+    <script>
+      // aplica o tema antes do primeiro paint (evita flash)
+      try {
+        var t = localStorage.getItem("am.theme") || "system";
+        var dark = t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) document.documentElement.classList.add("dark");
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/anotacao-medica/assets/index-ID57zOFy.js"></script>
+    <link rel="stylesheet" crossorigin href="/anotacao-medica/assets/index-pTbRkgVA.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
