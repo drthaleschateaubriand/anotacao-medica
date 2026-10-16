@@ -1,0 +1,19 @@
+logs
+*.log
+node_modules
+dist
+dist-ssr
+dist-fn/
+*.local
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+# segredos / privado (NUNCA versionar)
+.env.local
+.env.*.local
+anotacao-medica-private/
+admin_token.txt
+senha*.txt
+*.pem
+screens/
