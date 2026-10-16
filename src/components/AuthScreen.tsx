@@ -16,6 +16,7 @@ export function AuthScreen() {
     setBusy(true); setErr('')
     try {
       await auth.login(pw, keep)
+      location.hash = '#/' // depois de entrar, abre direto em Notas
     } catch (ex) {
       setErr(describeLoginError(ex).message)
     } finally { setBusy(false) }
